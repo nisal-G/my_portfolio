@@ -19,8 +19,8 @@ const Hero = () => {
             className={cn(
               "absolute inset-0",
               "[background-size:40px_40px]",
-              "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-              "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
+              "[background-image:linear-gradient(to_right,rgba(228,228,231,0.3)_1px,transparent_1px),linear-gradient(to_bottom,rgba(228,228,231,0.3)_1px,transparent_1px)]",
+              "dark:[background-image:linear-gradient(to_right,rgba(38,38,38,0.3)_1px,transparent_1px),linear-gradient(to_bottom,rgba(38,38,38,0.3)_1px,transparent_1px)]",
             )}
           />
 
@@ -36,12 +36,12 @@ const Hero = () => {
               </h2>
 
               <TextGenerateEffect
-                className="text-center text-[40px] md:text-5xl lg:text-6xl"
+                className="text-center text-[40px] md:text-5xl lg:text-6xl" 
                 words="Transforming Ideas into Interactive Realities"
               />
 
               <p className='text-center md:tracking-wider md:4 text-sm md:text-lg lg:text-2xl'>
-                Hi, I&apos;m Nisal Gunathilaka, a passionate web developer.
+                Hi, I&apos;m Nisal Gunathilaka, a passionate web developer. 
               </p>
 
               <a href='#about'>
