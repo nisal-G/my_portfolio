@@ -1,4 +1,5 @@
 import { cn } from "@/utils/cn";
+import { BackgroundGradientAnimation } from "./GradientBg";
 
 export const BentoGrid = ({
   className,
@@ -74,6 +75,13 @@ export const BentoGridItem = ({
              className="object-cover object-center w-full h-full" />
           )}
         </div>
+
+        {id === 6 && (
+          <BackgroundGradientAnimation>
+            <div className="absolute z-50 flex items-center justify-center text-white font-bold">
+            </div>
+          </BackgroundGradientAnimation>
+        )}
 
       </div>
 
