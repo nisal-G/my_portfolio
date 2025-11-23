@@ -1,6 +1,6 @@
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
-
+import { GlobeDemo } from "./GridGlobe";
 export const BentoGrid = ({
   className,
   children,
@@ -45,7 +45,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 relative rounded-3xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
+        "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 relative overflow-hidden rounded-3xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
         className,
       )}
 
@@ -93,9 +93,9 @@ export const BentoGridItem = ({
             <div className="mt-2 mb-2 font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
               {title}
             </div>
-
-
         </div>
+
+        {id === 2 && <GlobeDemo />}
 
       </div>
 
