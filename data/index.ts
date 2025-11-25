@@ -20,7 +20,7 @@ export const gridItems = [
     id: 2,
     title: "I'm very flexible with time zone communications",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    className: "lg:col-span-2 lg:row-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
