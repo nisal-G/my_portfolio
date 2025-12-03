@@ -5,7 +5,7 @@ import { FaLocationArrow } from 'react-icons/fa';
 
 const RecentProjects = () => {
   return (
-    <div className='py-20'>
+    <div className='py-20' id='projects'>
         <h1 className='heading'>
             A small selection of {' '}
             <span className='text-purple-300'>recent projects</span>
@@ -49,12 +49,11 @@ const RecentProjects = () => {
                             </div>
 
                             <div className='flex justify-center items-center'>
-                                <a 
-                                    href={link} 
+                                <a href={link} 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     className='flex items-center lg:text-xl md:text-xs text-sm text-purple-300 hover:text-purple-400 transition-colors'
-                                >
+>
                                     Check Live Site
                                     <FaLocationArrow className='ms-3' style={{color: "#CBACF9"}} />
                                 </a>
