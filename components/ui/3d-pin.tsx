@@ -10,12 +10,16 @@ export const PinContainer = ({
   href,
   className,
   containerClassName,
+  target,
+  rel,
 }: {
   children: React.ReactNode;
   title?: string;
   href?: string;
   className?: string;
   containerClassName?: string;
+  target?: React.HTMLAttributeAnchorTarget;
+  rel?: string;
 }) => {
   const [transform, setTransform] = useState(
     "translate(-50%,-50%) rotateX(0deg)"
@@ -37,6 +41,8 @@ export const PinContainer = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       href={href || "/"}
+      target={target}
+      rel={rel}
     >
       <div
         style={{
