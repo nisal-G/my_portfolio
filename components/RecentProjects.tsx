@@ -1,3 +1,4 @@
+"use client";
 import { projects } from '@/data';
 import React from 'react';
 import { PinContainer } from './ui/3d-pin';
@@ -50,7 +51,12 @@ const RecentProjects = () => {
 
                             <div className='flex justify-center items-center'>
                                 <span 
-                                    className='flex items-center lg:text-xl md:text-xs text-sm text-purple-300 hover:text-purple-400 transition-colors'
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        window.open(link, '_blank', 'noopener,noreferrer');
+                                    }}
+                                    className='flex items-center lg:text-xl md:text-xs text-sm text-purple-300 hover:text-purple-400 transition-colors cursor-pointer'
                                 >
                                     Check Live Site
                                     <FaLocationArrow className='ms-3' style={{color: "#CBACF9"}} />

@@ -16,8 +16,8 @@ Sentry.init({
       colorScheme: "dark",
       autoInject: true,
       showBranding: false,
-      showName: false,
-      showEmail: false,
+      showName: true,
+      showEmail: true,
       id: "sentry-feedback"
     }),
   ],
