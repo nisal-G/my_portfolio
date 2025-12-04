@@ -14,6 +14,11 @@ Sentry.init({
      Sentry.feedbackIntegration({
       // Additional SDK configuration goes in here, for example:
       colorScheme: "dark",
+      autoInject: true,
+      showBranding: false,
+      showName: false,
+      showEmail: false,
+      id: "sentry-feedback"
     }),
   ],
 
